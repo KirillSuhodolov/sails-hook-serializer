@@ -1,0 +1,38 @@
+{
+ "name": "sails-hook-serializer",
+ "version": "0.0.1",
+ "description": "Serializer for sails.js",
+ "main": "index.js",
+ "sails": {
+   "isHook": true,
+   "hookName": "serializer"
+ },
+ "engines": {
+   "node": ">= 0.10",
+   "npm": ">= 2.3"
+ },
+ "devDependencies": {
+    "sails": "balderdashy/sails",
+    "waterline": "balderdashy/waterline"
+  },
+  "dependencies": {
+    "lodash": "^3.10.0",
+    "pluralize": "^1.0.1",
+    "bluebird": "2.9.12",
+  },
+ "keywords": [
+  "socket.io",
+  "sails.js",
+  "sails-hook",
+  "hook",
+  "serializer",
+  "api",
+  "json"
+	],
+	"repository": {
+    "type": "git",
+    "url": "git://github.com/KirillSuhodolov/sails-hook-serializer.git"
+  },
+  "author": "Kirill Suhodolov",
+  "license": "MIT"
+}
