@@ -18,7 +18,7 @@
   "dependencies": {
     "lodash": "^3.10.0",
     "pluralize": "^1.0.1",
-    "bluebird": "2.9.12",
+    "bluebird": "2.9.12"
   },
  "keywords": [
   "socket.io",

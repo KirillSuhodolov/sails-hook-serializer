@@ -14,6 +14,8 @@ create Serializer.js file in your services folder with content :
 module.exports = require('sails-hook-serializer/api/services/Serializer.js');
 ```
 
+## Customization
+
 By default for all your models will created serializer in runtime. 
 For customization create folder serializers under api deirectory and put here you custom serializers.
 For example:
@@ -47,7 +49,7 @@ At the end of serialization method modifyAttributes invokes. Inside this method 
 
 All methods can return promise.
 
-# Call Serializer
+## Call Serializer
 
 ```
 new Serializer(User, users, currentUser, meta)
