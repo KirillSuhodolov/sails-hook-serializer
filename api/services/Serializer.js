@@ -1,7 +1,11 @@
 var _             = require('lodash');
 var pluralize     = require('pluralize');
 var Promise       = require("bluebird");
-var actionUtil    = require( '../blueprints/_util/actionUtil' );
+var actionUtil    = {
+  isKey: function(possibleKey) {
+    return _.isNumber(possibleKey) || _.isString(possibleKey);
+  }
+};
 
 function Serializer (model, records, currentUser, meta) {
   var Serializer = this;
