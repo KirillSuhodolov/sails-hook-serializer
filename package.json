@@ -1,6 +1,6 @@
 {
  "name": "sails-hook-serializer",
- "version": "0.0.2",
+ "version": "0.0.3",
  "description": "Serializer for sails.js",
  "main": "index.js",
  "sails": {
