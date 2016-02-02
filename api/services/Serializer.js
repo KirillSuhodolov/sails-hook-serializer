@@ -154,7 +154,7 @@ function Serializer (model, records, currentUser, meta) {
     var serializer = this.findSerializer(identity);
 
     _.forEach(serializer.attributes, function(attribute){
-      if (serializer.hasOwnProperty(attribute)) {
+      if (serializer.hasOwnProperty(attribute) && _.isFunction(serializer[attribute])) {
         var result = serializer[attribute](record, json, Serializer.currentUser);
 
         if (Serializer.isPromise(result)) {
